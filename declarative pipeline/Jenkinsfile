@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Starting Build...'
+                sleep 5
+                echo 'Build complete!'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Tests Running...'
+                sleep 5
+                echo 'Tests complete!'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Starting Deployment...'
+                sleep 5
+                echo 'Deployment complete!'
+            }
+        }
+    }
+}
